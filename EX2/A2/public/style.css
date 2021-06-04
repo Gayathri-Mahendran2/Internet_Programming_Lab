@@ -1,0 +1,154 @@
+p {
+  font-size: 150%;
+}
+
+h1 {
+  font-size: 300%;
+}
+h2 {
+	font-size: 200%;
+}
+.anim{
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+  transition-timing-function: ease-in-out;
+}
+#div1 {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 100px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#div2 {
+  padding: 50px;
+  position: absolute;
+  border: 1px solid black;
+  background-color: red;
+  -ms-transform: rotate(45deg); 
+  -ms-transform-origin: 20% 40%; 
+  transform: rotate(45deg);
+  transform-origin: 20% 40%;
+}
+.anim:hover {
+  width: 300px;
+  
+}
+.sub {
+  width: 50%;
+  height: 50%;
+  animation-name: example;
+  animation-duration: 4s;
+  border-radius: 8px;
+}
+@keyframes example {
+  from {width: 50%;
+  height: 50%;}
+  to {width:100px;height:100px;}
+}
+.topnav {
+  overflow: hidden;
+  text-align: center;
+  margin: 20px;
+}
+
+.topnav a {
+  float: center;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 150%;
+}
+
+a:link {
+  color: black;
+  padding : 20px;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: white;
+  border-radius: 50px;
+  background-color: black;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #C0C0C0;
+  font-size: 80%;
+  position: relative;
+
+}
+div p{
+  margin:10px 15%;
+  font-size: 110%;
+}
+hr{
+  width : 200px;
+  border:0;
+  border-top : 3px dotted gray;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: +15px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+table {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+#t01 tr:nth-child(even) {
+  background-color: #FFEBCD;
+}
+
+#t01 tr:nth-child(odd) {
+  background-color: #F5FFFA;
+}
+
+#t01 th {
+  background-color: Black;
+  color: white;
+}
